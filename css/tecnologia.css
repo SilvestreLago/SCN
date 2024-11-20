@@ -1,0 +1,29 @@
+@charset 'UTF-8';
+
+.conteudo{
+    margin-top: 20px;
+    text-align: center;
+}
+
+.fotos{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+.foto-tech{
+    width: 300px;
+    display: flex;
+    border-radius: 15px;
+    margin-right: 20px;
+}
+
+.nome-figura{
+    text-align: center;
+}
+
+.foto-tec{
+    width: 400px;
+    display: flex;
+    margin: auto;
+}
