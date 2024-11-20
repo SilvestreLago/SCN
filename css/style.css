@@ -52,8 +52,9 @@ p{
     font-family: "Monoton", sans-serif;
     color: #FFD700 ;
 }
-.text-dourado {
-    color: #FFD700;
+.titulo{
+        font-family: "Monoton", sans-serif;
+        color: #388E3C;
 }
 /*TABELA PÁGINA DIÁSPORA*/
 .table {
