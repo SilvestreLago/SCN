@@ -4,33 +4,28 @@
 
 .container{
     padding: 1%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    text-align: center;
 }
 
-.livros{
-    margin-top: 1%;
-    padding: 1%;
-    color: #D32F2F;
-
-    background: linear-gradient(to right, #000000, #302626);
+.c2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .faixa{
     font-family: "Monoton", sans-serif;
     font-size: 1.8em;
+    margin-top: 1%;
+    padding: 1%;
+    color: #D32F2F;
+    background: linear-gradient(to right, #000000, #302626);
 }
 
 .titulo{
     font-family: "Monoton", sans-serif;
     color: #388E3C;
-
     font-size: 2.8em;
-}
-
-.relevancia{
-    text-align: justify;
 }
 
 .texto{

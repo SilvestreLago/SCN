@@ -108,6 +108,12 @@ text-align: center;
 padding-top: 0.5dvh;
 }
 
+.foot{
+    background: linear-gradient(to right, #302626, #000000);
+    padding: 1%;
+    color: white;
+}
+
 /* MEDIA QUERY */
 @media (max-width: 700px){
     .menu_port{
