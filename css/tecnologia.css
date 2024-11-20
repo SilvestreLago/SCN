@@ -1,12 +1,16 @@
 @charset 'UTF-8';
 
 
+@import url('https://fonts.googleapis.com/css2?family=Monoton&family=Oswald:wght@200..700&display=swap');
+
 p{
     text-indent: 2em;
 }
 .conteudo{
     margin-top: 20px;
     text-align: center;
+    font-family: "Monoton", sans-serif;
+    color: #D32F2F;
 }
 
 .fotos{
