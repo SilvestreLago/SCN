@@ -9,6 +9,11 @@
     display: flex;
     justify-content: center;
     margin-bottom: 30px;
+    flex-wrap: wrap;
+}
+
+img{
+    margin-bottom: 20px;
 }
 
 .foto-tech{
