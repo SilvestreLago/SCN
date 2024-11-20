@@ -1,5 +1,9 @@
 @charset 'UTF-8';
 
+
+p{
+    text-indent: 2em;
+}
 .conteudo{
     margin-top: 20px;
     text-align: center;
@@ -10,7 +14,9 @@
     justify-content: center;
     margin-bottom: 30px;
     flex-wrap: wrap;
+    cursor: pointer;
 }
+
 
 img{
     margin-bottom: 20px;
