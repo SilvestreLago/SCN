@@ -19,8 +19,16 @@ html{
 }
 p{
     text-align: justify;
+    text-indent: 4ch;
 }
-
+.leg-img{
+    text-align: center;
+    font-size: 12px;
+}
+.titulo-tabela{
+    font-size: 20px;
+    text-align: center;
+}
 
 /* NAVBAR */
 .menu_port{
