@@ -1,0 +1,187 @@
+
+
+
+/* Container para o texto de apresentação */
+.presentation-text {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #FFFFFF; /* Fundo branco para destaque */
+    border-left: 5px solid #FFD700; /* Borda dourada */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra para profundidade */
+    text-align: justify;
+    line-height: 1.6;
+}
+
+/* Título do texto de apresentação */
+.presentation-text h1 {
+    font-size: 28px;
+    color: #FFD700; /* Dourado para o título */
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+/* Destaque no corpo do texto */
+.presentation-text span {
+    color: #D32F2F; /* Vermelho para destaques */
+    font-weight: bold;
+}
+
+/* Botão de ação */
+.presentation-button {
+    display: block;
+    width: fit-content;
+    margin: 20px auto;
+    padding: 10px 20px;
+    background-color: #388E3C; /* Verde para o botão */
+    color: #FFFFFF; /* Branco para o texto do botão */
+    text-transform: uppercase;
+    font-weight: bold;
+    border: none;
+    border-radius: 4px;
+    text-align: center;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.presentation-button:hover {
+    background-color: #2E7D32; /* Verde escuro ao passar o mouse */
+}
+
+.presentation-text a{
+    text-decoration: none;
+} 
+
+
+
+/* Container para o texto de apresentação */
+.presentation-text-galeria {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #FFFFFF; /* Fundo branco para destaque */
+    border-left: 5px solid #2E7D32; /* Borda dourada */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra para profundidade */
+    text-align: justify;
+    line-height: 1.6;
+}
+
+/* Título do texto de apresentação */
+.presentation-text-galeria h1 {
+    font-size: 28px;
+    color: #2E7D32; /* Dourado para o título */
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+/* Estilo da galeria */
+.f-galeria {
+    display: flex;
+    flex-wrap: wrap; /* Permite quebrar linhas se necessário */
+    gap: 15px; /* Espaço entre os itens */
+    justify-content: center; /* Centraliza os itens */
+    padding: 20px;
+    background-color: #F5F5DC; /* Fundo bege claro */
+}
+
+/* Estilo dos itens da galeria */
+.f-galeria-item {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra */
+    border-radius: 8px; /* Bordas arredondadas */
+    overflow: hidden; /* Garante que a imagem fique dentro do contêiner */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Animação ao passar o mouse */
+}
+
+.f-galeria-item:hover {
+    transform: scale(1.05); /* Leve aumento no tamanho */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Sombra mais intensa */
+}
+
+/* Estilo das imagens */
+.f-galeria-item img {
+    width: 100%; /* Garante que a imagem ocupe todo o espaço */
+    height: 300px; /* Altura fixa para uniformidade */
+    object-fit: cover; /* Preenche o contêiner sem distorcer */
+}
+
+.f-galeria-item p{
+    text-align: center;
+    text-indent: 0;
+}
+
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    backdrop-filter: blur(5px); /* Fundo desfocado */
+    display: none; /* Esconde o modal por padrão */
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.modal-content {
+    position: relative;
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    max-width: 90%;
+    max-height: 90%;
+    overflow: hidden;
+}
+
+.modal-content img {
+    max-width: 50%;
+    max-height: 80%;
+    border-radius: 8px;
+    margin: auto;
+}
+
+.modal-close {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 24px;
+    color: #fff;
+    background-color: #000;
+    border-radius: 50%;
+    height: 32px;
+    width: 32px;
+    cursor: pointer;
+    font-weight: bold;
+    text-align: center;
+    transition: color 0.2s ease;
+}
+
+.modal-close:hover {
+
+    color: #D32F2F; /* Vermelho */
+    
+}
+
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .gallery-item {
+        flex: 1 1 calc(50% - 15px); /* 2 itens por linha */
+        max-width: calc(50% - 15px);
+    }
+}
+
+@media (max-width: 480px) {
+    .gallery-item {
+        flex: 1 1 calc(100% - 15px); /* 1 item por linha */
+        max-width: calc(100% - 15px);
+    }
+}
