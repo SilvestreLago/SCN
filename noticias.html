@@ -1,21 +1,100 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Noticias</title>
     <link rel="stylesheet" href="./css/style.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="shortcut icon" href="favicon.webp" type="image/x-icon">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+
+    <style>
+        body {
+            background-color: #F5F5DC;
+        }
+
+        main {
+            max-width: 1440px;
+            min-height: 85vh;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        main h1 {
+            margin-top: 20px;
+        }
+
+        main .conteudo_texto {
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            padding: 10px;
+        }
+
+        main .conteudo_texto .noticia {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+            background-color: white;
+            border-radius: 10px;
+            margin: 10px 0;
+        }
+
+        main .conteudo_texto .noticia .box_texto {
+            width: 55%;
+            text-align: center;
+            padding: 5px;
+        }
+
+        main .conteudo_texto .noticia img{
+            width: 40%;
+            border-radius: 10px;
+        }
+
+        main .conteudo_texto .noticia .box_texto .btn {
+            text-decoration: none;
+            background-color: green;
+            color: white;
+        }
+
+        @media(max-width: 992px){
+            main .conteudo_texto .noticia {
+                flex-direction: column;
+            }
+
+            main .conteudo_texto .noticia img{
+                width: 100%;
+                margin-top: 5px;
+            }
+
+            main .conteudo_texto {
+                padding: 0;
+            }
+
+            main .conteudo_texto .noticia .box_texto{
+                width: 90%;
+            }
+        }
+    </style>
 </head>
+
 <body>
     <div class="menu_int">
         <nav class="navbar navbar-expand bg-body-tertiary">
             <div class="container-fluid">
-                <a class="navbar-brand" href="#"><h1 class="nome_nav">Afrotec</h1></a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
+                <a class="navbar-brand" href="#">
+                    <h1 class="nome_nav">Afrotec</h1>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav">
@@ -66,16 +145,170 @@
                     </li>
                 </ul>
             </div>
-          </div>
-          <nav class="navbar navbar-dark bg-dark">
+        </div>
+        <nav class="navbar navbar-dark bg-dark">
             <div class="container-fluid">
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <a class="navbar-brand" href="#"><h1 class="nome_nav">Afrotec</h1></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <a class="navbar-brand" href="#">
+                    <h1 class="nome_nav">Afrotec</h1>
+                </a>
             </div>
-          </nav>
+        </nav>
     </div>
-    
+
+    <main class="container-md">
+        <h1 class="titulo">Notícias</h1>
+
+        <div class="conteudo_texto">
+            <div class="noticia">
+                <div class="box_texto">
+                    <h5><strong>Redação do Enem tem valorização da herança africana no Brasil como tema</strong></h3>
+                        <p>O tema da redação do Exame Nacional do Ensino Médio (Enem) 2024 é “Desafios para a
+                            valorização da herança africana no Brasil”, segundo informou o Ministério da Educação (MEC).
+                            Cerca de 4,3 milhões de candidatos fazem a prova neste domingo, 3. A proposta mantém a
+                            tradição do vestibular, de propor discussões sobre problemas sociais.</p>
+                        <a href="https://www.estadao.com.br/educacao/tema-redacao-enem-2024/" target="_blank" class="btn">Site da notícia</a>
+
+                </div>
+                <img src="./img/noticias/enem.png" alt="enem">
+            </div>
+
+            <h5><strong>1. Afrobeats e a Revolução Cultural Global</strong></h5>
+            <p>
+                Afrobeats continua a crescer como um dos gêneros musicais mais populares do mundo. Artistas como Burna
+                Boy, Wizkid, Tems e Omah Lay estão dominando as paradas de sucesso global e levando as influências
+                culturais africanas para o palco internacional.
+                Exemplo recente: Burna Boy ganhou o Grammy de Melhor Álbum de Música Global em 2024 por seu álbum Love,
+                Damini. Ele é amplamente considerado como um dos maiores representantes do Afrobeats no cenário mundial.
+            </p>
+
+            <h5><strong>2. A Conferência de Repatriamento e a Busca pela Justiça Histórica</strong></h5>
+            <p>
+                
+                A África tem se mobilizado para exigir o repatriamento de artefatos roubados durante o período colonial.
+                Este é um tema cada vez mais forte nas notícias e nos debates políticos, especialmente após o crescente
+                apoio a essa causa por parte de governos africanos e organizações internacionais.
+                Exemplo recente: Em 2024, o governo britânico devolveu uma escultura Benin Bronze à Nigéria, um artefato
+                que foi saqueado do Reino de Benin (atual Nigéria) em 1897. Esse é um marco significativo na luta por
+                justiça histórica e a devolução do patrimônio cultural africano.
+            </p>
+
+            <div class="noticia">
+              
+                <div class="box_texto">
+                    <h5><strong>Dia da Consciência Negra é feriado nacional pela 1ª vez</strong></h3>
+                        <p>O Dia Nacional de Zumbi e da Consciência Negra será celebrado como feriado nacional pela 1ª
+                            vez em 2024. A lei 14.759 de 2023, que tornou a data feriado nacional, foi aprovada em
+                            novembro de 2023 pelo Congresso e sancionada pelo presidente Luiz Inácio Lula da Silva (PT)
+                            em dezembro do mesmo ano.</p>
+                        <a href="https://www.poder360.com.br/historia/dia-da-consciencia-negra-e-feriado-nacional-pela-1a-vez/" target="_blank" class="btn">Site da notícia</a>
+                        
+                </div>
+                <img src="./img/noticias/consciencia-negra-11-nov-2024-capa-feriado-1-848x477.jpg" alt="consciencia-negra-11-nov-2024-capa-feriado">
+            </div>
+
+
+            <h5><strong>3. O Impacto da "Lei do Retorno" na Diáspora</strong></h5>
+            <p>
+                
+                Muitos países africanos estão criando iniciativas para reforçar os laços com a diáspora africana, como a
+                Lei do Retorno que incentiva os afrodescendentes a se estabelecerem em países como o Ghana e outros.
+                Exemplo recente: O Ghana organizou a campanha "The Year of Return" (Ano do Retorno), que se estendeu até
+                2020, mas teve um impacto contínuo nos anos seguintes. Em 2024, o país continua promovendo iniciativas
+                para trazer afrodescendentes de volta à África, com incentivos fiscais e apoio a negócios de
+                afroempreendedores.
+            </p>
+
+
+            <h5><strong>4. Movimento Black Lives Matter e a Mobilização Global</strong></h5>
+            <p>
+                O movimento Black Lives Matter (BLM), iniciado nos Estados Unidos, segue tendo um impacto global, com
+                suas manifestações e ações de conscientização sobre racismo estrutural sendo refletidas em diversos
+                contextos ao redor do mundo.
+                Exemplo recente: Em 2024, o movimento ganhou mais visibilidade na África e na Europa, com manifestações
+                contra o racismo nas forças policiais e demandas por justiça para casos como o de George Floyd. Além
+                disso, foi importante a atuação do movimento contra a violência policial no Brasil e em outros países da
+                diáspora africana.</p>
+
+            <div class="noticia">
+                <div class="box_texto">
+                    <h5><strong>Dia da Consciência Negra é reivindicação social desde a ditadura</strong></h3>
+                        <p>Teve longa gestação o reconhecimento do Dia de Zumbi e da Consciência Negra em 20 de novembro
+                            como feriado civil em todo o país: 53 anos. O intervalo é maior do que o espaço de tempo
+                            entre a Lei Eusébio de Queiroz (1850), que proibiu em definitivo a importação de pessoas
+                            escravizadas para o Brasil, e a Lei Áurea (1888), que declarou “extinta” a escravidão no
+                            país: 38 anos.</p>
+                        <a href="https://agenciabrasil.ebc.com.br/direitos-humanos/noticia/2024-11/dia-da-consciencia-negra-e-reivindicacao-social-desde-ditadura" target="_blank"  class="btn">Site da notícia</a>
+                </div>
+                <img src="./img/noticias/mg_6586.jpg" alt="Mulher negra">
+            </div>
+
+            <h5><strong>5. Mulheres Negras na Política</strong></h5>
+            <p>
+                
+                As mulheres negras estão ocupando cada vez mais espaços de liderança política, e esse fenômeno tem sido
+                amplamente discutido nas notícias afrocentradas.
+                Exemplo recente: Em 2023, Ngozi Okonjo-Iweala, economista nigeriana e diretora-geral da Organização
+                Mundial do Comércio (OMC), continuou a ganhar destaque internacionalmente como uma das principais
+                líderes africanas em cargos globais. Ela é um exemplo do crescente poder de influência das mulheres
+                negras nas esferas de decisão política e econômica.
+            </p>
+
+
+            <h5><strong>6. Cultura e Cinema: O Sucesso de Produções Afrocentradas</strong></h5>
+            <p>
+                O cinema africano e filmes de diretores negros têm ganhado destaque em festivais internacionais e nas
+                plataformas de streaming, trazendo à tona questões históricas e contemporâneas que afetam as comunidades
+                negras.
+                Exemplo recente: O filme "The Woman King" (2022), estrelado por Viola Davis e baseado nas mulheres
+                guerreiras de Dahomey, foi um grande sucesso nas bilheteiras e nas críticas. Em 2024, a Netflix e outras
+                plataformas continuam a investir em produções com temas afrocentrados, como a série "Queen Sono", que é
+                uma das primeiras produções africanas de espionagem a ganhar popularidade global.
+            </p>
+
+            <div class="noticia">
+               
+                <div class="box_texto">
+                    <h5><strong>Cinco filmes impactantes para repensar racismo no Dia da Consciência Negra</strong></h3>
+                        <p>O cinema é uma das grandes ferramentas para provocar reflexão. Pensando nisso, Splash separou
+                            cinco dicas de filmes que abordam preconceito e racismo. O Dia da Consciência Negra é
+                            lembrado em todo o Brasil nesta quarta-feira (20), então, que tal aproveitar e conferir
+                            esses títulos de peso disponíveis no streaming?</p>
+                        <a href="https://www.uol.com.br/splash/noticias/2024/11/19/dia-da-consciencia-negra-veja-5-filmes-para-refletir-sobre-racismo.htm" target="_blank" class="btn">Site da notícia</a>
+                </div>
+                <img src="./img/noticias/um-dos-filmes-mais-lucrativos-de-todos-os-tempos-corra-foi-indicado-ao-oscar-de-melhor-filme-em-2018.jpg" alt="Filme Corra!">
+            </div>
+
+            <h5><strong>7. Afroempreendedorismo e Inovação</strong></h5>
+            <p>
+                O afroempreendedorismo continua crescendo com novas startups e inovações tecnológicas lideradas por
+                jovens africanos. Esses empreendedores estão gerando impacto econômico tanto na África quanto na
+                diáspora.
+                Exemplo recente: A startup Flutterwave, fundada por Olugbenga Agboola (nigeriano), tornou-se uma das
+                maiores fintechs africanas, sendo avaliada em bilhões de dólares e ganhando reconhecimento global. Ela
+                oferece soluções de pagamentos para empresas africanas e tem expandido para mercados internacionais.</p>
+
+
+            <h5><strong>8. A Educação Antirracista e Descolonização do Conhecimento</strong></h5>
+            <p>
+                A crescente demanda por uma educação mais inclusiva e que questione os currículos coloniais tem sido um
+                tema central nas universidades e movimentos sociais.
+                Exemplo recente: Em 2024, a Universidade de Cape Town, na África do Sul, lançou um novo programa de
+                estudos sobre Afrocentricidade, com o objetivo de formar uma nova geração de acadêmicos comprometidos
+                com a descolonização do saber. Além disso, o movimento para a criação de mais currículos sobre história
+                africana e a resistência ao eurocentrismo ganhou força em várias universidades ao redor do mundo.</p>
+
+        </div>
+    </main>
+
+
+    <footer class="foot">
+        <p class="text-center">Todos os direitos reservados ao <a href="https://portal.ifba.edu.br/jacobina" target="_blank" style="text-decoration: none;">IFBA-Jacobina</a> 2024</p>
+      </footer>
 </body>
+
 </html>
