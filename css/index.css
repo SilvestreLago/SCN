@@ -170,6 +170,36 @@
     
 }
 
+.video-container {
+    /* Centraliza e define tamanhos */
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 10px;
+    
+    /* Bordas e fundo com destaque */
+    border: 3px solid #D32F2F;
+    border-radius: 10px;
+    background-color: #FDECEC; /* Um leve tom de vermelho para contraste */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    
+    /* Animações */
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.video-container:hover {
+    /* Efeito ao passar o mouse */
+    transform: scale(1.03);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+}
+
+.video-container video {
+    /* Ajusta o vídeo dentro da div */
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+
 
 /* Responsividade */
 @media (max-width: 768px) {
