@@ -9,10 +9,11 @@ Bege Claro (#F5F5DC): Para o fundo principal, criando contraste.
 
 /* IMPORTAÇÃO DE FONTE */
 @import url('https://fonts.googleapis.com/css2?family=Monoton&family=Oswald:wght@200..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family&display=swap');
 
 /* GERAL */
 *{
-    font-family: 'Courier New', Courier, monospace;
+    font-family: 'Montserrat', 'Noto sans','Tahoma', sans-serif;
 }
 html{
     background-color: #F5F5DC;
